@@ -21,6 +21,11 @@ liegt aktuell aber in Klärung. Bis zur Klärung steht das Projekt unter keiner 
 es sei denn eine solche lässt sich aus der Historie und den Urheberrechten von 
 Terry Hughes und/oder Emily Bache ableiten. 
 
+Benutzung
+---------
+
+Wie das Kata's gelöst werden soll, steht in [USAGE.md](./USAGE.md) beschrieben
+
 
 
 
