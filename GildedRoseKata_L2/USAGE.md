@@ -12,12 +12,12 @@ Der grundlegende Weg
 --------------------
 
 1. JUnit Tests schreiben um das aktuelle Verhalten der Anwendung über 
-Regressionstests zu fixieren. Dazu sollten die Bedingungen aus der 
-[Hintergrundgeschichte](./FachlicheAnforderungen.md) benutzt werden.
+Regressionstests zu fixieren. Dazu sollten die Bedingungen aus den 
+[Fachlichen Anforderungen](./FachlicheAnforderungen.md) benutzt werden.
 2. Prüfen der Kodeabdeckung durch die JUnit Tests. Die Tests müssen mindestens 
 100% der Anweisungen und eine minimale Bedingungsabdeckung gewährleisten.
 3. Umstrukturierung des Kodes nach Clean Code Regeln - Refactoring.
-4. Vergleich anderen Entwicklern.
+4. Vergleich mit anderen Entwicklern.
 
 
 Das Aufzeichnen des Kata's
