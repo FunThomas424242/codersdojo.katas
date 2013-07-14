@@ -1,0 +1,1 @@
+java -cp ../lib/junit-4.10.jar;bin org.junit.runner.JUnitCore com.gildedrose.GildedRoseTest
