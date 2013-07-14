@@ -10,7 +10,7 @@ Um seine Fähigkeiten weiter zu entwickeln führt der Schüler Übungen sogenann
 Zur Durchführung dieser Übungen begibt sich der Schüler an den vom Meister angewiesenen Raum
 dem Dojo. 
 
-Im Zuge der [Craftmanship Bewegung](http://manifesto.softwarecraftsmanship.org/#/de)
+Im Zuge der [Craftsmanship Bewegung](http://manifesto.softwarecraftsmanship.org/#/de)
 wird dieses Vorgehen auf die Softwareentwicklung angewendet. 
 Somit begibt sich nun auch der Softwareentwickler in einen Raum an einen Ort und führt 
 dort seine Kata's aus.

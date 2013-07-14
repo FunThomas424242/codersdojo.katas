@@ -24,7 +24,7 @@ Terry Hughes und/oder Emily Bache ableiten.
 Benutzung
 ---------
 
-Wie das Kata's gelöst werden soll, steht in [USAGE.md](./USAGE.md) beschrieben
+Wie das Kata gelöst werden soll, steht in [USAGE.md](./USAGE.md) beschrieben
 
 
 
