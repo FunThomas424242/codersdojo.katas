@@ -10,14 +10,14 @@ Gastwirt genannt Allison. Wir handeln aber auch mit feinsten Waren.
 Unglücklicherweise verringert sich die Qualität unserer Waren ständig bis zum 
 Erreichen ihres Verfallsdatum. Wir haben ein System am Ort welches unser Lager
 ständig für uns aktualisiert. Es wurde entwickelt von einem unlustigen Typ 
-genannt Leeroy, welche inzwischen weiter zu neuen Abenteuern aufgebrochen ist.
+genannt Leeroy, welcher inzwischen weiter zu neuen Abenteuern aufgebrochen ist.
 Deine Aufgabe ist es dem System ein neues Feature hinzuzufügen durch welches
 wir in der Lage sind eine neue Kategorie von Gegeständen zu verkaufen.
 Doch zunächst ein Überblick über unser System:
 
-* Alle Gegenstände besitzen einen ''SellIn'' Wert. Dieser gibt die Anzahl der
-Tage an welche für den Verkauf verbleiben.
-* Alle Gegenstände besitzen einen ''Quality'' Wert. Dieser gibt an wie wertvoll 
+* Alle Gegenstände besitzen einen <em>SellIn</em> Wert. Dieser gibt die Anzahl der
+Tage an, welche für den Verkauf verbleiben.
+* Alle Gegenstände besitzen einen <em>Quality</em> Wert. Dieser gibt an wie wertvoll 
 der Gegenstand ist. 
 * Am Ende jeden Tages verringert unser System beide Werte für jedes Item.
 
@@ -42,7 +42,7 @@ Dies erfordert eine Aktualisierung unseres Systems:
 Gegenstände.
 
 Fühlen Sie sich frei Änderungen an der UpdateQuality Methode vorzunehmen und 
-fügen Sie neuen Kode ein solange noch alles einwandfrei funktioniert.
+fügen Sie neuen Kode ein, solange noch alles einwandfrei funktioniert.
 Jedoch ändern Sie auf keinen Fall die Item Klasse oder die Attribute der Item 
 Klasse, diese gehören dem Goblin in der Ecke. Er würde Sie spontan mit einem
 Schlag töten, denn er glaubt nicht an eine gemeinsame Verantwortung für den 
