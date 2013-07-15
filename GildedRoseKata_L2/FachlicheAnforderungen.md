@@ -1,43 +1,55 @@
+<!-- übernommen aus dem Projekt von Emily Bache und übersetzt von Thomas Schubert -->
+ 
+
 Gilded Rose - Fachliche Anforderungen
 =====================================
 
+Hallo und willkommen im Team Gilded Rose. Wie Du weißt, sind wir ein kleines
+Gasthaus in bevorzugter Lage einer bekannten Stadt mit einem freundlichen 
+Gastwirt genannt Allison. Wir handeln aber auch mit feinsten Waren. 
+Unglücklicherweise verringert sich die Qualität unserer Waren ständig bis zum 
+Erreichen ihres Verfallsdatum. Wir haben ein System am Ort welches unser Lager
+ständig für uns aktualisiert. Es wurde entwickelt von einem unlustigen Typ 
+genannt Leeroy, welche inzwischen weiter zu neuen Abenteuern aufgebrochen ist.
+Deine Aufgabe ist es dem System ein neues Feature hinzuzufügen durch welches
+wir in der Lage sind eine neue Kategorie von Gegeständen zu verkaufen.
+Doch zunächst ein Überblick über unser System:
 
-Hi and welcome to team Gilded Rose. As you know, we are a small inn with a prime 
-location in a prominent city ran by a friendly innkeeper named Allison. We also 
-buy and sell only the finest goods. Unfortunately, our goods are constantly 
-degrading in quality as they approach their sell by date. We have a system in 
-place that updates our inventory for us. It was developed by a no-nonsense type
-named Leeroy, who has moved on to new adventures. Your task is to add the new 
-feature to our system so that we can begin selling a new category of items. 
-First an introduction to our system:
+* Alle Gegenstände besitzen einen ''SellIn'' Wert. Dieser gibt die Anzahl der
+Tage an welche für den Verkauf verbleiben.
+* Alle Gegenstände besitzen einen ''Quality'' Wert. Dieser gibt an wie wertvoll 
+der Gegenstand ist. 
+* Am Ende jeden Tages verringert unser System beide Werte für jedes Item.
 
-	- All items have a SellIn value which denotes the number of days we have to 
-	  sell the item
-	- All items have a Quality value which denotes how valuable the item is
-	- At the end of each day our system lowers both values for every item
+Soweit ganz einfach, nicht wahr?  Gut an der Stelle wird es interessant:
+	
+* Sobald das Verfallsdatum abgelaufen ist, verringert sich die Qualität 
+doppelt so schnell. 
+* Die Qualität eines Gegenstandes kann nie negativ sein.
+* "Aged Brie" erhöht seine Qualität ständig, je älter er wird - wie ein Wein.
+* Die Qualität eines Gegenstandes kann jedoch niemals größer als 50 sein.
+* "Sulfuras" ein legendärer Gegenstand der never has to be sold und seine
+Qualität nie verringert.
+* "Backstage-Pässe" steigen genau wie "Aged Brie" in der Qualität bis zum 
+Erreichen ihres Verfallsdatums. Die Qualität erhöht sich um 2 wenn es noch 10 
+Tage oder weniger bis zum Erreichen des Verfallsdatum sind, um 3 bei 5 Tage oder
+weniger. Nach Erreichen des Verfallsdatums fällt die Qualität sofort auf 0.
 
-Pretty simple, right? Well this is where it gets interesting:
+Wir haben vor kurzem ein Angebot von beschworenen Produkten unterzeichnet.
+Dies erfordert eine Aktualisierung unseres Systems:
 
-	- Once the sell by date has passed, Quality degrades twice as fast
-	- The Quality of an item is never negative
-	- "Aged Brie" actually increases in Quality the older it gets
-	- The Quality of an item is never more than 50
-	- "Sulfuras", being a legendary item, never has to be sold or decreases in Quality
-	- "Backstage passes", like aged brie, increases in Quality as it's SellIn 
-	  value approaches; Quality increases by 2 when there are 10 days or less 
-	  and by 3 when there are 5 days or less but Quality drops to 0 after the concert
+* Beschworene Produkte verringern ihre Qualität 2x so schnell wie normale 
+Gegenstände.
 
-We have recently signed a supplier of conjured items. This requires an update to our system:
+Fühlen Sie sich frei Änderungen an der UpdateQuality Methode vorzunehmen und 
+fügen Sie neuen Kode ein solange noch alles einwandfrei funktioniert.
+Jedoch ändern Sie auf keinen Fall die Item Klasse oder die Attribute der Item 
+Klasse, diese gehören dem Goblin in der Ecke. Er würde Sie spontan mit einem
+Schlag töten, denn er glaubt nicht an eine gemeinsame Verantwortung für den 
+Kode (Falls nötig können Sie die UpdateQuality Methode und die Item Attribute 
+als static definieren, wir werden Sie decken). 
 
-	- "Conjured" items degrade in Quality twice as fast as normal items
+Nur zur Klarstellung, ein Gegenstand kann niemals eine Qualität größer 50
+erreichen, jedoch "Sulfuras" ist ein legendärer Gegenstand und als solcher ist 
+seine Qualität 80 und ändert sich nicht.
 
-Feel free to make any changes to the UpdateQuality method and add any new code 
-as long as everything still works correctly. However, do not alter the Item 
-class or Items property as those belong to the goblin in the corner who will 
-insta-rage and one-shot you as he doesn't believe in shared code ownership 
-(you can make the UpdateQuality method and Items property static if you like, 
-we'll cover for you). 
-
-Just for clarification, an item can never have its Quality increase above 50, 
-however "Sulfuras" is a legendary item and as such its Quality is 80 and it 
-never alters.
