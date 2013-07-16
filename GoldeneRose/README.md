@@ -21,6 +21,12 @@ liegt aktuell aber in Klärung. Bis zur Klärung steht das Projekt unter keiner 
 es sei denn eine solche lässt sich aus der Historie und den Urheberrechten von 
 Terry Hughes und/oder Emily Bache ableiten. 
 
+Aus den Unterhaltungen mit [Terry Hughes](https://twitter.com/FunThomasSFnet/status/356871149902237699) 
+sowie mit [Emily Bache](https://github.com/emilybache/Refactoring-Katas/issues/20) gelange ich zu dem 
+Schluss, dass eine Lizenz für das Kata nicht notwendig bzw. auch nicht ratsam ist.
+Daher werde ich lediglich noch nach möglichen Trademarks suchen und diese ersetzen.
+Aus diesem Grund heißt das Kata in meinem Projekt ab sofort GoldeneRose.
+
 Benutzung
 ---------
 
