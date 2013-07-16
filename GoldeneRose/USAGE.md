@@ -24,10 +24,12 @@ auch das stellt aus meiner Sicht keine wirkliche Sicherheit dar.
 Das Aufzeichnen des Kata's
 --------------------------
 
-1. ./run-endless.cmd in einer Konsole starten
-2. Die Quellen in der Eclipse bearbeiten (Autobuild an)
-3. Die Ausgaben auf der Console lesen um zu wissen ob der Test rot oder grün ist
-4. Das aufgezeichnete Kata auf codersdojo hochladen
+1. ./run-endless.cmd in einer Konsole starten.
+2. Die Quellen in der Eclipse bearbeiten (Autobuild an).
+3. Die Ausgaben auf der Console lesen um zu wissen ob der Test rot oder grün ist.
+4. Beenden der Aufzeichnung des Kata's erfolgt mit Ctl+C in der Console.
+5. Über Menü Upload des aufgezeichneten Kata auf codersdojo auswählen.
+6. URL aus der Console in den Browser kopieren und die Meta Daten vervollständigen.
 
 Ausgewählte öffentliche Aufzeichnungen
 --------------------------------------
