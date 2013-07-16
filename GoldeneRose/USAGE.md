@@ -33,6 +33,7 @@ Das Aufzeichnen des Kata's
 
 Ausgewählte öffentliche Aufzeichnungen
 --------------------------------------
-[Emily Bache](http://bit.ly/MWTZB0) - basiert vermutlich auf dem Original Kata.
-[FunThomas424242](http://bit.ly/12dSvV5) - mein erster Versuch. 
+
+* [Emily Bache](http://bit.ly/MWTZB0) - basiert vermutlich auf dem Original Kata.
+* [FunThomas424242](http://bit.ly/12dSvV5) - mein erster Versuch. 
 
