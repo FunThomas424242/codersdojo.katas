@@ -34,4 +34,4 @@ installiert sein (erst Ruby dann den gem codersdojo).
 Die Kata's
 ----------
 
-* [GildedRose](./GildedRoseKata_L2) Ein Kata zum Üben des Schreibens von Regressionstests und des Refactoring.
+* [GoldeneRose](./GoldeneRose) Ein Kata zum Üben des Schreibens von Regressionstests und des Refactoring.
