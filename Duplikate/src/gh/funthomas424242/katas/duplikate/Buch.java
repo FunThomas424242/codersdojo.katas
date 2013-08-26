@@ -10,14 +10,14 @@ public class Buch extends BuchEntity {
 
 	@Override
 	public int hashCode() {
-		// TODO
-		return 0;
+		// TODO ersetzte durch eine korrekte Implementierung
+		return super.hashCode();
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		// TODO
-		return true;
+		// TODO ersetzte durch eine korrekte Implementierung
+		return super.equals(obj);
 	}
 
 }
