@@ -1,4 +1,4 @@
 Junit was downloaded from: 
-http://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.10.jar
+http://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.11.jar
 and is protected by:
 http://opensource.org/licenses/cpl1.0.txt

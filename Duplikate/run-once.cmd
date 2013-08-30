@@ -1,1 +1,1 @@
-java -cp ../lib/junit-4.10.jar;bin org.junit.runner.JUnitCore gh.funthomas424242.katas.duplikate.BuchTest
+java -cp ../katas.platform/lib/junit-4.11.jar;../katas.platform/lib/hamcrest-core-1.3.jar;bin org.junit.runner.JUnitCore gh.funthomas424242.katas.duplikate.BuchTest
