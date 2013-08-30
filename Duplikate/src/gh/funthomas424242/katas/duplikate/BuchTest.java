@@ -2,6 +2,7 @@ package gh.funthomas424242.katas.duplikate;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
@@ -155,6 +156,25 @@ public class BuchTest {
 	/**
 	 * Test typischer Fallen
 	 */
+
+	@Test
+	public void equalsNurEinAttribute() {
+		final Buch buch1 = new Buch(TITEL_FAUST, AUTOR_GOETHE,
+				HERAUSGABE_FAUST.getTime());
+		final Buch buch2 = new Buch(TITEL_FAUST, AUTOR_SCHILLER,
+				HERAUSGABE_FAUST.getTime());
+		final Buch buch3 = new Buch(TITEL_FAUST, AUTOR_GOETHE,
+				HERAUSGABE_HANDSCHUH.getTime());
+
+		final Buch buch4 = new Buch(TITEL_HANDSCHUH, AUTOR_GOETHE,
+				HERAUSGABE_FAUST.getTime());
+		final Buch buch5 = new Buch(TITEL_HANDSCHUH, AUTOR_SCHILLER,
+				HERAUSGABE_HANDSCHUH.getTime());
+		assertNotEquals(buch1, buch2);
+		assertNotEquals(buch1, buch3);
+		assertNotEquals(buch1, buch4);
+		assertNotEquals(buch1, buch5);
+	}
 
 	@Test
 	public void hashCodeMapKeyTrap() {
