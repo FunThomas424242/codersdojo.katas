@@ -1,1 +1,1 @@
-java -cp ../lib/junit-4.10.jar;bin org.junit.runner.JUnitCore com.gildedrose.GoldeneRoseTest
+java -cp ../lib/junit-4.10.jar;bin org.junit.runner.JUnitCore gh.funthomas424242.katas.duplikate.BuchTest
