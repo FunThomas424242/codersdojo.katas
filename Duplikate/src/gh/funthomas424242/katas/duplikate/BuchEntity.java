@@ -1,8 +1,14 @@
 package gh.funthomas424242.katas.duplikate;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class BuchEntity {
+public class BuchEntity implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 414794656668860365L;
 
 	private static Long lastGlobalId = 0L;
 
@@ -10,6 +16,7 @@ public class BuchEntity {
 	protected String autorName;
 	protected String buchTitel;
 	protected Date herausgabeDatum;
+	transient protected Long viewCount;
 
 	private synchronized Long nextId() {
 		return ++lastGlobalId;
@@ -21,9 +28,11 @@ public class BuchEntity {
 		this.buchTitel = buchTitel;
 		this.autorName = autorName;
 		this.herausgabeDatum = herausgabeDatum;
+		this.viewCount = 0L;
 	}
 
 	public Long getId() {
+		viewCount++;
 		return Id;
 	}
 
@@ -32,6 +41,7 @@ public class BuchEntity {
 	}
 
 	public String getAutorName() {
+		viewCount++;
 		return autorName;
 	}
 
@@ -40,6 +50,7 @@ public class BuchEntity {
 	}
 
 	public String getBuchTitel() {
+		viewCount++;
 		return buchTitel;
 	}
 
@@ -48,6 +59,7 @@ public class BuchEntity {
 	}
 
 	public Date getHerausgabeDatum() {
+		viewCount++;
 		return herausgabeDatum;
 	}
 
